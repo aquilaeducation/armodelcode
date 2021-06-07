@@ -17,7 +17,6 @@
 <model-viewer src="https://cdn.glitch.com/a75ef111-c090-4f34-8c0a-0d7d8561a366%2FTiger.glb?v=1622270017804" alt="A 3D model of an astronaut" auto-rotate="" shadow-intensity="3.2" shadow-softness="0.73" exposure="0.8" camera-controls="" background-color="#ffffff" ar="" magic-leap="" unstable-webxr="" ios-src="https://github.com/aquilaeducation/webardemo/blob/main/Tiger.usdz?raw=true" ar-status="not-presenting">
 </model-viewer>
 
-<p> Hello </p>
 <style>
   
 model-viewer{
