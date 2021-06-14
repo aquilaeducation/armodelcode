@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <body oncontextmenu="return false">
+   
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+
+</head>
+
+<p> Choose Color</p>
+
+<button class="button button1" onclick="FunctionButton1()"> </button>
+<button class="button button2" onclick="FunctionButton2()"> </button>
+
+<div id="option1">
+<model-viewer src="https://cdn.glitch.com/a75ef111-c090-4f34-8c0a-0d7d8561a366%2Fhoodie_zipblack.glb?v=1623668802579" alt="A 3D model of a pink fleece sweatshirt" auto-rotate="" camera-controls="" background-color="#ffffff" ar="" magic-leap="" unstable-webxr="" ios-src="https://github.com/aquilaeducation/armodels/blob/main/hoodie_zipblack.usdz?raw=true" ar-status="not-presenting">
+</model-viewer>
+</div>
+
+<div id="option2" style="display:none">
+<model-viewer src="https://cdn.glitch.com/a75ef111-c090-4f34-8c0a-0d7d8561a366%2Fhoodie_zipcream.glb?v=1623671815751" alt="A 3D model of baseball hat" auto-rotate="" camera-controls="" background-color="#ffffff" ar="" magic-leap="" unstable-webxr="" ios-src="https://github.com/aquilaeducation/armodels/blob/main/hoodie_zipcream.usdz?raw=true" ar-status="not-presenting">
+
+</model-viewer>
+</div>
+  
+<p>  </p>
+
+<script>
+function FunctionButton1() {
+  var x = document.getElementById("option1");
+  x.style.display = "block";
+  var x = document.getElementById("option2");
+  x.style.display = "none";
+}
+</script>
+
+<script>
+function FunctionButton2() {
+  var x = document.getElementById("option2");
+  x.style.display = "block";
+  var x = document.getElementById("option1");
+  x.style.display = "none";
+  
+  }
+</script>
+  
+  
+  <style>
+
+model-viewer{
+	position: static;
+	width:100vw;
+	height:75vh;
+	margin: 0 auto;
+}
+.button1 {
+  background-color: #857b7b; /* Grey */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #E8E2B0; /* Cream */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 50%;}
+.button2 {border-radius: 50%;}
+
+</style>
+
+<script>  
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+</script> 
+
+
+
+
+
+
+
+
