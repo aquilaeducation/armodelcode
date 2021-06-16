@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Add text to DIV using JavaScript</title>
@@ -10,7 +10,9 @@
         }
     </style>
 </head>
-<body>
+
+<body oncontextmenu="return false">
+
     <p>
     	<input type='button' onclick='addglb()' value='Add GLB'>
     </p>
@@ -28,8 +30,25 @@
         	&lt;html&gt;&lt;head&gt;
 	&lt;title&gt;3D Model AR&lt;/title&gt;
 	&lt;meta charset="UTF-8"&gt;
+&lt;body oncontextmenu="return false"&gt;
 
-&lt;!-- Import the component --&gt;
+&lt;script&gt;  
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+&lt;/script&gt; 
+
+
 &lt;script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"&gt;&lt;/script&gt;
 
 &lt;script nomodule="" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"&gt;&lt;/script&gt;
@@ -89,5 +108,20 @@ model-viewer{
         </p>
     </div>
     
+    <script>  
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+</script> 
+    
 </html>
-
