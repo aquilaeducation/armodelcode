@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
     <title>Add text to DIV using JavaScript</title>
+    <p> <b>Instructions:</b> Add the URL for each of the models.  Then click "Add GLB" and "Add USDZ" buttons.  Once both links have been added, copy the entire code to an HTML element.
+    </p>
     <style>
     	body, input {
         	font: 17px Calibri;
@@ -14,10 +16,12 @@
     </p>
     
     <p>
-    	<input type='button' onclick='addusdz()' value='add USDZ'>
+    	<input type='button' onclick='addusdz()' value='Add USDZ'>
     </p>
     GLB URL:    <input type="text" name="glb" id="glb"><br/>
     USDZ URL:    <input type="text" name="usdz" id="usdz"><br/>
+
+<p> <b>Copy the code below:</b></p>
 
   	<div id='code1'>
     	<p>
@@ -44,7 +48,7 @@
     
     <div id='code2'>
     	<p>
-        	"alt="A 3D model" auto-rotate="" shadow-intensity="3.2" shadow-softness="0.73" exposure="0.8" camera-controls="" background-color="#ffffff" ar="" magic-leap="" unstable-webxr="" ios-src="
+        	" alt="A 3D model of an astronaut" auto-rotate="" shadow-intensity="3.2" shadow-softness="0.73" exposure="0.8" camera-controls="" background-color="#ffffff" ar="" magic-leap="" unstable-webxr="" ios-src="
         </p>
     </div>
     
@@ -68,7 +72,7 @@
 
 <div id='code3'>
     	<p>
-        	"ar-status="not-presenting"&gt;
+        	" ar-status="not-presenting"&gt;
 &lt;/model-viewer&gt;
 
 &lt;style&gt;
@@ -86,3 +90,4 @@ model-viewer{
     </div>
     
 </html>
+
