@@ -1,0 +1,7 @@
+<html><head> <title>3D Model AR</title> <meta charset="UTF-8"> <!-- Import the component --> <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script> <script nomodule="" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"> </head> <body class="w-100 sans-serif bg-white"> <!-- Changes the background color-> <!-- Use it like any other HTML element --> <model-viewer src="
+
+https://cdn.glitch.com/a75ef111-c090-4f34-8c0a-0d7d8561a366%2FTiger.glb?v=1622270017804
+" alt="A 3D model of an astronaut" auto-rotate="" shadow-intensity="3.2" shadow-softness="0.73" exposure="0.8" camera-controls="" background-color="#ffffff" ar="" magic-leap="" unstable-webxr="" ios-src="
+
+https://github.com/aquilaeducation/armodels/blob/main/Tiger.usdz?raw=true
+" ar-status="not-presenting"> </model-viewer> <style> model-viewer{ position: absolute; width:100vw; height:100vh; margin: 0 auto; } </style> </body></html>
