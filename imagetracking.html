@@ -1,0 +1,43 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@0.3.1/dist/mindar.prod.js"></script>
+</head>
+
+<body>
+<a-scene
+mindar="imageTargetSrc: https://cdn.glitch.com/2d9d38c0-634e-48df-8c83-766008a77793%2Fmoai_targets.mind?v=1628665327166; showStats: true;"
+color-space="sRGB"
+renderer="colorManagement: true, physicallyCorrectLights"
+vr-mode-ui="enabled: false"
+device-orientation-permission-ui="enabled: false"
+>
+<a-assets timeout="20000">
+<img
+id="card"
+src="https://cdn.glitch.com/2d9d38c0-634e-48df-8c83-766008a77793%2FMoai.jpg?v=1628665437761"
+/>
+<a-asset-item
+id="avatarModel"
+src="https://cdn.glitch.com/a75ef111-c090-4f34-8c0a-0d7d8561a366%2Fwhale.glb?v=1622278120440"
+>
+</a-asset-item>
+</a-assets>
+<a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+<a-entity mindar-image-target="targetIndex: 0">
+<a-plane
+src="#card"
+position="0 0 0"
+height="1.4"
+width="1"
+rotation="0 0 0"
+></a-plane>
+<a-gltf-model
+rotation="0 0 0 "
+position="0 0 0.1"
+scale="0.05 .05 .05"
+src="#avatarModel"
+animation-mixer/>
+</a-entity>
+</a-scene>
+</body>
+</html>
