@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+    />
+    <body oncontextmenu="return false">
+      <style>
+        div.options-panel {
+          background-color: #ffffff;
+          overflow: auto;
+          display: flex;
+        }
+
+        div.options-panel {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          text-decoration: none;
+          width: 100%;
+          height: 100px;
+          white-space: nowrap;
+        }
+      </style>
+    </body>
+  </head>
+
+  <p></p>
+  <div class="example-container">
+    <div class="options-panel">
+      <button class="button buttonvixair" onclick="vixair()"></button>
+    </div>
+  </div>
+
+  <style>
+    button {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: ;
+      box-sizing: border-box;
+    }
+
+    button[slot="hotspot-artworkname"] {
+      --min-hotspot-opacity: 0;
+      background-color: black;
+    }
+
+    #annotation {
+      background-color: #edebeb;
+      position: absolute;
+      transform: translate(10px, 10px);
+      border-radius: 10px;
+      padding: 10px;
+    }
+    /* This keeps child nodes hidden while the element loads */
+    :not(:defined) > * {
+      display: none;
+    }
+  </style>
+  <model-viewer
+    id="vixair"
+    auto-rotate=""
+    camera-controls=""
+    background-color="#ffffff"
+    ar=""
+    magic-leap=""
+    unstable-webxr=""
+    ar-placement="wall"
+    src="https://aquilamixedreality.s3.eu-west-1.amazonaws.com/Demos/PacificPointArt/Vixair.glb"
+    style="--poster-color: #ffffff00"
+    alt="A 3D model of an astronaut."
+    poster="https://aquilamixedreality.s3.eu-west-1.amazonaws.com/Demos/PacificPointArt/vixair.jpg"
+    ios-src="https://aquilamixedreality.s3.eu-west-1.amazonaws.com/Demos/PacificPointArt/Vixair.usdz"
+  >
+    <button
+      slot="hotspot-artworkname"
+      data-position="0.14859468025947045m -0.011660539216241637m 0.07082444272727932m"
+      data-normal="0m -1.3435883843274952e-7m 0.999999999999991m"
+      data-visibility-attribute="visible"
+    >
+      <div
+        id="annotation"
+        style="font-family: Montserrat; font-size: 12px; color: black"
+      >
+        Vixair by Taylor Frost
+      </div>
+    </button>
+
+    <div
+      id="annotation"
+      style="font-family: Montserrat; font-size: 12px; color: black"
+    >
+      Pacific Point Fine Art
+    </div>
+  </model-viewer>
+
+  <p></p>
+
+  <script>
+    function vixair() {
+      var x = document.getElementById("vixair");
+      x.style.display = "block";
+      var x = document.getElementById("Woodland");
+      x.style.display = "none";
+    }
+  </script>
+
+  <style>
+    model-viewer {
+      position: static;
+      width: 100vw;
+      height: 75vh;
+      margin: 0 auto;
+    }
+    .buttonvixair {
+      background-image: url("https://aquilamixedreality.s3.eu-west-1.amazonaws.com/Demos/PacificPointArt/vixair_img.png");
+      border: none;
+      height: 75px;
+      width: 100px;
+      color: none;
+      padding: 0px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  </style>
+
+  <p style="font-family: Montserrat; font-size: 8px">
+    created by www.aquilamx.com
+  </p>
+</html>
